@@ -1,5 +1,5 @@
 html {
-    color-scheme: light dark;
+    color-scheme: normal;
 }
 body {
     background-color: rgba(255, 255, 255, 0.05);
@@ -26,13 +26,31 @@ main {
     gap: 2rem;
 }
 section {
-    width: min(80ch, 67% - 2rem); /* set width to whichever value is smaller */
+    width: min(80ch, 100% - 2rem); /* set width to whichever value is smaller */
 }
 aside {
-    width: min(40ch, 32% - 1rem );
+    width: min(40ch, 100% - 1rem );
 }
+
 img {
     max-width: 100%;
     display: block;
     margin: 1rem auto;
+}
+.related {
+    border-left: 20px solid salmon;
+    padding-left: 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    font-size: 2rem;
+}
+.related img {
+    max-width: 200px;
+}
+
+@media (max-width: 767px) {
+    header, main, .related {
+        flex-direction: column;
+    }
 }
