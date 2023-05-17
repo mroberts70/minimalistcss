@@ -26,7 +26,7 @@ main {
     gap: 2rem;
 }
 section {
-    width: min(80ch, 100% - 2rem); /* set width to whichever value is smaller */
+    width: min(80ch, 100% - .25rem); /* min(,) sets width to whichever value is smaller -- makes the element responsive */
 }
 aside {
     width: min(40ch, 100% - 1rem );
